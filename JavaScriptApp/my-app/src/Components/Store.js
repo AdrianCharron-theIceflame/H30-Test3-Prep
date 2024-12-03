@@ -1,15 +1,12 @@
-import Product from "./Propduct"
+import React from "react"
 import "../Styles/Store.css"
-import Open from './Open';
-
-type StoreProps = {
-    products: { ProductId: number, StockNumber: string, Description: string, Inventory: number, Cost: number }[]
-}
-export default function Store(props: StoreProps) {
+import Product from "./Product"
+import Open from "./Open"
+export default function Store(props) {
     const { products } = props
     return (
         <div className="store">
-            <h2>My Amazing Super Store</h2>
+            <h2>Welcome to my amazing store!</h2>
             <Open />
             <div className="inv">
                 {products.map(el => (<Product key={el.ProductId} product={{ StockNumber: el.StockNumber, Description: el.Description, Inventory: el.Inventory, Cost: el.Cost }} />))}
