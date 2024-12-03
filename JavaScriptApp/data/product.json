@@ -1,0 +1,72 @@
+[
+    {
+        "ProductId": 58,
+        "StockNumber": "5702rt538",
+        "Description": "viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla",
+        "Inventory": 476,
+        "Cost": 28.52
+      },
+      {
+        "ProductId": 59,
+        "StockNumber": "0110cd584",
+        "Description": "lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed",
+        "Inventory": 131,
+        "Cost": 84.04
+      },
+      {
+        "ProductId": 60,
+        "StockNumber": "8550dh604",
+        "Description": "hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla",
+        "Inventory": 53,
+        "Cost": 21.15
+      },
+      {
+        "ProductId": 61,
+        "StockNumber": "4190cx468",
+        "Description": "lectus in est risus auctor sed tristique in tempus sit amet sem",
+        "Inventory": 476,
+        "Cost": 126.16
+      },
+      {
+        "ProductId": 62,
+        "StockNumber": "2068ya963",
+        "Description": "quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl",
+        "Inventory": 91,
+        "Cost": 63.48
+      },
+      {
+        "ProductId": 63,
+        "StockNumber": "9491wq720",
+        "Description": "metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget",
+        "Inventory": 119,
+        "Cost": 178.13
+      },
+      {
+        "ProductId": 64,
+        "StockNumber": "2397ps528",
+        "Description": "quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero",
+        "Inventory": 860,
+        "Cost": 66.67
+      },
+      {
+        "ProductId": 65,
+        "StockNumber": "0050jt999",
+        "Description": "sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis",
+        "Inventory": 406,
+        "Cost": 43.95
+      },
+      {
+        "ProductId": 66,
+        "StockNumber": "4719mu212",
+        "Description": "integer pede justo lacinia eget tincidunt eget tempus vel pede morbi",
+        "Inventory": 92,
+        "Cost": 240.85
+      },
+      {
+        "ProductId": 67,
+        "StockNumber": "9455cp228",
+        "Description": "blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique",
+        "Inventory": 478,
+        "Cost": 175.79
+      }
+]
