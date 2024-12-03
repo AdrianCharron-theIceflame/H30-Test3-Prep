@@ -69,4 +69,12 @@
         "Inventory": 478,
         "Cost": 175.79
       }
+      ,
+      {
+        "ProductId": 68,
+        "StockNumber": "2222df111",
+        "Description": "blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique",
+        "Inventory": 30,
+        "Cost": 175.79
+      }
 ]
