@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/App.css';
 import Store from './Store';
 import productsList from "../data/product.json"
-
+// just testing
 function App() {
   return (
     <div className="App">
