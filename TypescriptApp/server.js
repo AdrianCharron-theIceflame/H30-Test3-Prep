@@ -14,8 +14,12 @@ const PORT = 5000;
 // serve the built react app
 app.use(express_1.default.static(WEBROOT));
 //serve the products.json
-app.route(`/products`).get((req, res) => {
-    res.json(product_json_1.default);
+app.route(`/products/:id?`).get((req, res) => {
+    if (!req.params.id)
+        res.json(product_json_1.default);
+    else {
+        let foundProduct = product_json_1.default.find(el => el.ProductId === Number(req.params.id));
+    }
 });
 // listen on port 5555
 app.listen(PORT, () => {

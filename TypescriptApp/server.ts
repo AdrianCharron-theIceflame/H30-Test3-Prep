@@ -12,8 +12,12 @@ const PORT = 5000
 app.use(express.static(WEBROOT))
 
 //serve the products.json
-app.route(`/products`).get((req, res) => {
-    res.json(productList)
+app.route(`/products/:id?`).get((req, res) => {
+    if (!req.params.id)
+        res.json(productList)
+    else {
+        let foundProduct = productList.find(el => el.ProductId === Number(req.params.id))
+    }
 })
 
 // listen on port 5555
