@@ -1,6 +1,5 @@
 import '../Styles/App.css';
 import Store from './Store';
-import productsList from '../data/product.json';
 
 export default function App() {
   return (
