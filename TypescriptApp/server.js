@@ -11,17 +11,13 @@ const path_1 = __importDefault(require("path"));
 const app = (0, express_1.default)();
 const WEBROOT = path_1.default.join(__dirname, `my-app`, `build`); // This is a built version of the react app - run: | npm run build | in the my-app section for the path to be valid
 const PORT = 5000;
-// serve the built react app
-app.use(express_1.default.static(WEBROOT));
 //serve the products.json
 app.route(`/products/:id?`).get((req, res) => {
-    if (!req.params.id)
+    if (req.params.id === undefined) {
         res.json(product_json_1.default);
-    else {
-        let foundProduct = product_json_1.default.find(el => el.ProductId === Number(req.params.id));
     }
 });
-// listen on port 5555
+// listen on port 5000
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });

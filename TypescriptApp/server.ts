@@ -8,19 +8,14 @@ const app = express()
 const WEBROOT = path.join(__dirname, `my-app`, `build`) // This is a built version of the react app - run: | npm run build | in the my-app section for the path to be valid
 const PORT = 5000
 
-// serve the built react app
-app.use(express.static(WEBROOT))
-
 //serve the products.json
 app.route(`/products/:id?`).get((req, res) => {
-    if (!req.params.id)
+    if(req.params.id === undefined) {
         res.json(productList)
-    else {
-        let foundProduct = productList.find(el => el.ProductId === Number(req.params.id))
     }
 })
 
-// listen on port 5555
+// listen on port 5000
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`)
 })
