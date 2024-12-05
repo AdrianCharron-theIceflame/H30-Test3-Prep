@@ -9,14 +9,12 @@ type ProductPropTypes = {
 }
 export default function Product(props: ProductPropTypes) {
     const { product } = props
-    if (product.Inventory >= 50)
         return (
             <div className="product">
                 <p>Product Stock Number: {product.StockNumber}</p>
                 <p>Product Description: {product.Description}</p>
-                <p>Product Inventory: {product.Inventory} {product.Inventory > 100 ? `We have plenty!` : `We have some.`}</p>
+                <p>Product Inventory: {product.Inventory} {product.Inventory > 100 ? `We have plenty!` : product.Inventory >= 50 ? `We have some.` : `Nee more!`}</p>
                 <p>Product Cost: ${product.Cost}</p>
             </div>
         )
-    else return null
 }
